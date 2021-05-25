@@ -1,0 +1,7 @@
+{
+  "name": "SoniaShop",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,88 @@
+<ion-header class="head">
+  <ion-toolbar>
+    <ion-nav-title>
+      <img alt="Company Logo1" height="40" src="assets/photos/1.jpg.PNG" />
+    </ion-nav-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="form" >
+  <h1> Ajouter des nouvelles Teeshirts</h1>
+  <div class="ion-padding">
+    <form [formGroup]="add" class="ion-padding" >
+
+      
+      <div>
+        
+     
+        <div>
+         <ion-input
+          
+          class="wrap-input"
+          type="text"
+          placeholder="titre"
+          formControlName="Titre"
+        >
+      </ion-input> 
+   </div>
+      </div>
+      <small
+        class="error-message"
+        *ngIf=" add.get('Titre').hasError('required')"
+        >this field is required</small
+      >
+
+      <div>
+        <div>
+          <ion-textarea
+            type="email"
+            class="wrap-input"
+            placeholder="description"
+            formControlName="Description"
+          ></ion-textarea>
+        </div>
+        <small
+          class="error-message"
+          *ngIf=" add.get('Description').hasError('required')"
+          >this field is required</small
+        >
+      </div>
+      <div>
+        <div>
+         
+          <ion-input
+            type="text"
+            class="wrap-input"
+            placeholder="modele"
+            formControlName="Modele"
+          ></ion-input>
+        </div>
+        <small
+          class="error-message"
+          *ngIf=" add.get('Modele').hasError('required')"
+          >this field is required</small
+        >
+      </div>
+      <div>
+        <div>
+          <ion-input
+            type="number"
+            class="wrap-input"
+            placeholder="prix"
+            formControlName="Prix"
+          ></ion-input>
+        </div>
+        <small
+          class="error-message"
+          *ngIf=" add.get('Prix').hasError('required')"
+          >this field is required</small
+        >
+      </div>
+
+      <ion-footer class="ion-no-border">
+        <ion-button class="butn" (click)="onadd()">add </ion-button>
+      </ion-footer>
+    </form>
+  </div>
+</ion-content>
+

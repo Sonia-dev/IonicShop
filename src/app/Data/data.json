@@ -1,0 +1,28 @@
+{
+  "teeshirts": [
+    {
+      "Titre": "T-shirt Lacoste SPORT tricolore Édition France Olympique",
+      "Description": "Ce t-shirt à col rond Édition Jeux Olympiques réalisé en jersey respirant, mixant coton bio et polyester recyclé, a tout bon. Il se distingue par des manches dépareillées et un look tricolore iconique, parfait pour soutenir avec style l’Équipe de France olympique. Des finitions soignées, un crocodile tricolore et un logo France Olympique exclusifs signent ce nouveau modèle sportif et écoresponsable que vous porterez sans hésiter avec son short en molleton assorti.  Col rond bord-côte contrasté Jersey de coton bio mélangé respirant ultra-dry Manches courtes dépareillées Logo France Olympique imprimé poitrine Crocodile tricolore poitrine Matiere principale: Coton (75%), Polyester (25%) / Bord-cote encolure: Coton (50%), Polyester (50%)",
+      "Modele": "La Coste",
+      "photo": "",
+      "Prix": 60,
+      "id": 18
+    },
+    {
+      "Titre": "T-shirt à col rond en coton premium",
+      "Description": "Disponible en de nombreux coloris contemporains, ce t-shirt classique à col rond mise sur des lignes minimalistes et une nouvelle coupe boyfriend pile dans l'air du temps. Confectionné en jersey de coton premium, ce modèle doux et confortable est idéal pour le plein été. Et pour un look urbain sans concession, associez-le à un pantalon de survêtement uni de la collection.",
+      "Modele": "La coste ",
+      "photo": "",
+      "Prix": 55,
+      "id": 19
+    },
+    {
+      "Titre": "T-shirt à col rond en coton côtelé doux",
+      "Description": "Réalisé en coton côtelé doux, ce t-shirt à col rond affiche une coupe ajustée actuelle. Avec ses manches courtes et ses finitions soignées, ce modèle iconique de la garde-robe Lacoste impose ses lignes clean dans votre vestiaire d'été. Facile à porter, vous le glisserez sous une chemise en jean ou dans la taille haute d'un pantalon en coton.",
+      "Modele": "La coste ",
+      "photo": "",
+      "Prix": 60,
+      "id": 20
+    }
+  ]
+}

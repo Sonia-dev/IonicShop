@@ -1,0 +1,94 @@
+.ion-margin-top{
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+#ion-badge{
+    color: #fff;
+    position:absolute;
+    top:0px;
+    right: 0px;
+    border-radius: 100%;
+ }
+ ionic-selectable {
+  width: 100%;
+  color: #20a08a;
+  opacity: 1;
+  font-size: 24px;
+  font-weight: 500;
+
+  justify-content: center;
+}
+
+ion-card{
+  width: 50%;
+  height: 300px;
+
+  border-radius: 12px;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      transform: scale(1.1,1.1) rotate(1deg);
+      transition: 600ms all ease-in-out;
+    }
+}
+
+ion-title{
+  font-weight: 600;
+}
+
+.swiper-slide-active{
+  transform: scale(1.05,1.05);
+}
+
+.swiper-slide{
+  transition: 400ms all ease-in-out ;
+}
+.bg_class{
+  --background: linear-gradient(
+      197deg, 
+      #004526 0%, 
+      #e2e2e2 33.5%, 
+      #004526 100%
+  ) !important;
+}
+
+.butn{
+  --background: #2db175 100%;
+  --border-color :#DB0026;
+  
+
+}
+ionic-selectable {
+  --background:#DB0026;
+ 
+  
+}
+
+ion-slides{
+  --bullet-background:grey;
+  --bullet-background-active:#DB0026;
+}

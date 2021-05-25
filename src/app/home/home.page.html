@@ -1,0 +1,83 @@
+
+<ion-header>
+  <ion-toolbar >
+    <ion-nav-title>
+  <img alt="Company Logo1" height="40" src="assets/photos/1.jpg.PNG">
+      </ion-nav-title>
+
+</ion-toolbar>
+</ion-header>
+<ion-content  class="bg_class">
+ <ion-button class="butn" > Search
+      <ionic-selectable
+      item-content
+      #selectComponent
+      [(ngModel)]="teeshirt"
+      itemValueField="id"
+      itemTextField="Titre"
+      [items]="teeshirts "
+      (onChange)="TeeshirtChanged(teeshirt.id)"
+      [canSearch]="true"
+      ResetButtonText="Clear selected"
+      [ShouldStoreItemValue]="true"
+      headerColor="primary"
+      >
+      <ng-template ionicSelectableCloseButtonTemplate>
+        <ion-icon name="close-circle"></ion-icon>
+      </ng-template>
+
+      <ng-template ionicSelectableFooterTemplate > 
+        <ion-footer>
+          <ion-toolbar>
+            <ion-row text-center>
+              <ion-col size="4">
+                <ion-button color="dark" (click)="clear()"> Clear</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button color="dark"  (click)="toggleItems()">
+                  toggle</ion-button
+                >
+              </ion-col>
+              <ion-col size="4">
+                <ion-button color="dark"  (click)="confirm()">
+                  confirm</ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-toolbar>
+        </ion-footer>
+      </ng-template>
+    </ionic-selectable>
+  </ion-button>
+
+  <!-- Slide menu -->
+
+  <ion-slides #slides [options]="sliderConfig " slidesPerView="2" spaceBetween="250" pager="true" scrollbar="true" class="ion-margin-top  ">
+    <ion-slide *ngFor="let teeshirt of teeshirtsData">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            <ion-text color="dark">
+              <h1>{{teeshirt.Titre}}</h1>
+            </ion-text>
+          
+          </ion-card-title>
+          <ion-card-content>
+          
+            <img  src="">
+          <ion-col size ="10">
+            <ion-button 
+            class="butn"
+              expand="full"
+              shape="round"
+              (click)="openDetails(teeshirt.id)"
+            > show details </ion-button>
+          </ion-col >
+      
+         </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-button  class="butn"  href="/add">Add Teeshirt</ion-button>
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-nav-title>
+     <img alt="Company Logo1" height="40" src="assets/photos/Lacoste.png">
+ 
+      </ion-nav-title>
+
+<br><br>
+
+<form [formGroup]="edit">
+  <div class="form-group row ">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Id</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="inputEmail3" placeholder="Id" formControlName="id"/>
+  <!---->
+   
+  </div>
+  </div>
+  <div class="form-group row ">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Titre</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="inputEmail3" placeholder="titre" formControlName="Titre"/>
+  <!---->
+    <small class="text-danger" *ngIf=" edit.get('Titre').hasError('required')">this field is required</small>
+    
+  </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Description</label>
+  <div class="col-sm-10">
+  <input type="email" class="form-control" id="inputEmail3" placeholder="description" formControlName="Description"/>
+  <small class="text-danger" *ngIf=" edit.get('Description').hasError('required')">this field is required</small>
+
+    
+  </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Modele</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputEmail3" placeholder="modele" formControlName="Modele"/>
+    <small class="text-danger" *ngIf=" edit.get('Modele').hasError('required')">this field is required</small>
+    
+  </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Prix</label>
+  <div class="col-sm-10">
+    <input type="number" class="form-control" id="inputEmail3" placeholder="prix" formControlName="Prix"/>
+    <small class="text-danger" *ngIf=" edit.get('Prix').hasError('required')">this field is required</small>
+    
+  </div>
+  </div>
+  <div class="form-group row">
+  <div class="col-sm-10">
+    <ion-button   class="butn"  (click)="update()" >update </ion-button>
+   
+    </div>
+  </div>
+  
+</form>
+
+

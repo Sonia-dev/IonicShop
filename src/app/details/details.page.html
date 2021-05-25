@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-nav-title>
+     <img alt="Company Logo1" height="40" src="assets/photos/Lacoste.png">
+ 
+      </ion-nav-title>
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_class">
+ 
+  <ion-card  >
+    <ion-card-header>
+      <tr >
+        <div class="ion-padding-vertical">
+          <h1 class="item-name"> Titre : </h1>
+      <ion-card-title> {{teeshirt.Titre}} </ion-card-title>
+     
+    </div>
+    <div class ="seperator"> <hr></div>
+    <div class="description">
+      <h5> Description: </h5>
+      <p>{{teeshirt.Description}}</p>
+    </div>
+    <div class ="seperator"> <hr></div>
+      <ion-card-subtitle>  <h5> Modele: </h5>{{teeshirt.Modele}} </ion-card-subtitle>
+      <div class ="seperator"> <hr></div>
+      <ion-card-subtitle><h5> Prix: </h5> {{teeshirt.Prix}} </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+    
+    </ion-card-content>
+  </ion-card>
+  <ion-footer no-border >
+  <ion-col size ="10">
+    <ion-button
+      expand="full"
+      class="butn"
+      shape="round"
+    mode="ios"
+      (click)="edit(teeshirt.id)"
+    > Edit </ion-button>
+  </ion-col>
+  <ion-col size ="10" offset="1">
+    <ion-button
+      expand="full"
+      class="butn"
+      shape="round"
+      mode="ios"
+      
+      (click)="delete(teeshirt)"
+    > Delete </ion-button>
+  </ion-col>
+</ion-footer>
+</ion-content>
